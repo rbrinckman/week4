@@ -26,6 +26,11 @@ window.getDeck = function() {
   return cards;
 }
 
-$(function() {
-  // Your code goes here!
-})
+$("deal").click(function(){
+
+  $("c1").attr("src", "http://pngimg.com/upload/chicken_PNG2167.png")
+  $("c2").attr("src", window.getDeck)
+  $("c3").attr("src", window.getDeck)
+  $("c4").attr("src", window.getDeck)
+  $("c5").attr("src", window.getDeck)
+}
