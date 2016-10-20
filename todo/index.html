@@ -6,12 +6,62 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="todo.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<header class="container">
+  <input type="text" placeholder="Enter a to-do item..." id="item"></input>
+  <button id="add">
+    <img src="Pencil-icon.png"></img>
+  </button>
+</header>
 <body>
-  <h1>Let's get organized!</h1>
-  <h2>Here's an easy-to-use "to-do" list</h2>
-</body>
+  <div class="container">
+    <h1>Let's get organized!</h1>
+    <h3>Enter things you want to get done above, and celebrate each and every success!</h3>
+  </div>
+  <div class="container">
+    <ul class="todo" id="todo">
+      <li id="hardcode">
+        Walk the Dog.
+        <div class="buttons">
+          <button class="remove" id="hardcode">
+            <img src="remove-icon-png-25.png"></img>
+          </button>
+          <button class="complete">
+            <img src="done-icon.png"></img>
+          </button>
+        </div>
+      </li>
+      <li id="hardcode">
+        Catch 14 new Pokemon in Washington Square Park.
+        <div class="buttons">
+          <button class="remove">
+            <img src="remove-icon-png-25.png"></img>
+          </button>
+          <button class="complete">
+            <img src="done-icon.png"></img>
+          </button>
+        </div>
+      </li>
+      <li id="hardcode">
+        Convince a supermodel to go on a date with me. :)
+        <div class="buttons">
+          <button class="remove">
+            <img src="remove-icon-png-25.png"></img>
+          </button>
+          <button class="complete">
+            <img src="done-icon.png"></img>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
 
-<p id="foot">© 2016 All rights reserved.</p>
+</body>
+<footer>
+  <div class="container">
+  <p id="foot">Created by <b>Robert Brinckman</b> for KIEI 924 - Introduction to Software Development (Prof. Brian Eng)</p>
+  </div>
+  <script src="todo.js"></script>
+</footer>
 </html>
