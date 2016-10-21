@@ -26,11 +26,15 @@ window.getDeck = function() {
   return cards;
 }
 
-$("deal").click(function(){
-
-  $("c1").attr("src", "http://pngimg.com/upload/chicken_PNG2167.png")
-  $("c2").attr("src", window.getDeck)
-  $("c3").attr("src", window.getDeck)
-  $("c4").attr("src", window.getDeck)
-  $("c5").attr("src", window.getDeck)
-}
+$(function() {
+  $(".btn").on("click", function(event) {
+    event.preventDefault()
+    var x = getDeck()
+    var y = x.shuffle()
+    $("#c1").attr("src", "http://golearntocode.com/images/cards/" + y[0] + ".png")
+    $("#c2").attr("src", "http://golearntocode.com/images/cards/" + y[1] + ".png")
+    $("#c3").attr("src", "http://golearntocode.com/images/cards/" + y[2] + ".png")
+    $("#c4").attr("src", "http://golearntocode.com/images/cards/" + y[3] + ".png")
+    $("#c5").attr("src", "http://golearntocode.com/images/cards/" + y[4] + ".png")
+  });
+})
